@@ -34,7 +34,7 @@ class MosquittoManager: ObservableObject {
     mqttClient = CocoaMQTT(clientID: UIDevice.current.identifierForVendor?.uuidString ?? "default", host: "frqsaldanha.com", port: 1883)
     mqttClient?.username = ""
     mqttClient?.password = ""
-    mqttClient?.willMessage  = CocoaMQTTMessage(topic: ApiTopic.aurora_text_msg.rawValue, string: "Banana left the chat")
+    mqttClient?.willMessage  = CocoaMQTTMessage(topic: ApiTopic.aurora_text_msg.rawValue, string: "\(AppSettings.getUserName() ?? "??????") left the chat")
     mqttClient?.keepAlive = 60
     mqttClient?.delegate = self
     mqttClient?.autoReconnect = true
@@ -96,7 +96,7 @@ extension MosquittoManager: CocoaMQTTDelegate {
       log.debug("didConnectAck: \(ack.description)")
 
       startObservingTopics()
-      sendMessage(deviceId: UIDevice().deviceId, username: "Banana", timestamp: Date().millisecondsSince1970, content: "Banana entered the chat", type: ChatMessageType.textUser.rawValue)
+      sendMessage(deviceId: UIDevice().deviceId, username: "\(AppSettings.getUserName() ?? "??????")", timestamp: Date().millisecondsSince1970, content: "\(AppSettings.getUserName() ?? "??????") entered the chat", type: ChatMessageType.textUser.rawValue)
     }
   }
 

@@ -12,7 +12,33 @@ import SwinjectAutoregistration
 
 class VCAssembly: Assembly {
   func assemble(container: Container) {
+
+    registerUsernameSetupModule(on: container)
+    registerUserColorSetupModule(on: container)
     registerChatModule(on: container)
+    registerRouterModule(on: container)
+  }
+
+  private func registerUsernameSetupModule(on container: Container) {
+    container.register(UsernameSetupViewController.self) { r in
+      let presenter = r ~> (UsernameSetupPresenter.self)
+      return UsernameSetupViewController(presenter: presenter)
+    }
+
+    container.register(UsernameSetupPresenter.self) { r in
+      return UsernameSetupPresenter()
+    }
+  }
+
+  private func registerUserColorSetupModule(on container: Container) {
+    container.register(UserColorSetupViewController.self) { r in
+      let presenter = r ~> (UserColorSetupPresenter.self)
+      return UserColorSetupViewController(presenter: presenter)
+    }
+
+    container.register(UserColorSetupPresenter.self) { r in
+      return UserColorSetupPresenter()
+    }
   }
 
   private func registerChatModule(on container: Container) {
@@ -30,6 +56,23 @@ class VCAssembly: Assembly {
       let mosquittoManager = r ~> (MosquittoManager.self)
       let chatManager = r ~> (ChatManager.self)
       return ChatInteractor(mosquittoManager: mosquittoManager, chatManager: chatManager)
+    }
+  }
+
+  private func registerRouterModule(on container: Container) {
+    container.register(RouterViewController.self) { r in
+      let routerPresenter = r ~> (RouterPresenterProtocol.self)
+      return RouterViewController(presenter: routerPresenter)
+    }
+
+    container.register(RouterPresenterProtocol.self) { r in
+      let routerPresenter = r ~> (RouterInteractorProtocol.self)
+      return RouterPresenter(interactor: routerPresenter)
+    }
+
+    container.register(RouterInteractorProtocol.self) { r in
+      let realmManager = r ~> (RealmManager.self)
+      return RouterInteractor(realmManager: realmManager)
     }
   }
 }

@@ -27,6 +27,11 @@ extension UIFont {
   public static var aurora14: UIFont { return auroraFont(ofSize: 14) }
   public static var aurora16: UIFont { return auroraFont(ofSize: 16) }
 
+  public static var aurora12Dynamic: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(12)) }
+  public static var aurora14Dynamic: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(14)) }
+  public static var aurora16Dynamic: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(16)) }
+
+  public static var aurora14DynamicBold: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(14), isBold: true) }
   public static var aurora15DynamicBold: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(15), isBold: true) }
   public static var aurora20DynamicBold: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(20), isBold: true) }
   public static var aurora24DynamicBold: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(24), isBold: true) }

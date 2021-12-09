@@ -69,7 +69,7 @@ class KeyboardToolbarView: UIView {
     let myView = UIView()
     myView.layer.masksToBounds = true
     myView.layer.borderWidth = 1
-    myView.layer.borderColor = UIColor.auroraDarkBlue.cgColor
+    myView.layer.borderColor = UIColor.auroraLightBlueGrey.cgColor
     return myView
   }()
 

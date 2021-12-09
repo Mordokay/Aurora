@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C02597527622271009FFDDA /* RouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02597427622271009FFDDA /* RouterViewController.swift */; };
+		3C0259772762227D009FFDDA /* RouterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0259762762227D009FFDDA /* RouterPresenter.swift */; };
+		3C02597927622287009FFDDA /* RouterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02597827622287009FFDDA /* RouterInteractor.swift */; };
+		3C02597B276225F6009FFDDA /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02597A276225F6009FFDDA /* AppSettings.swift */; };
+		3C02598127622F15009FFDDA /* UsernameSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02598027622F15009FFDDA /* UsernameSetupViewController.swift */; };
+		3C02598327622F51009FFDDA /* AuroraProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02598227622F51009FFDDA /* AuroraProgressBar.swift */; };
+		3C02598527622FBB009FFDDA /* AuroraTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02598427622FBB009FFDDA /* AuroraTextfield.swift */; };
+		3C0259872762303A009FFDDA /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0259862762303A009FFDDA /* UITextField+Extension.swift */; };
+		3C02598927623063009FFDDA /* AuroraTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02598827623063009FFDDA /* AuroraTitleLabel.swift */; };
+		3C02598B276230D8009FFDDA /* AuroraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02598A276230D8009FFDDA /* AuroraButton.swift */; };
+		3C02598D276231A7009FFDDA /* AuroraInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02598C276231A7009FFDDA /* AuroraInfoLabel.swift */; };
+		3C02598F276231F8009FFDDA /* UsernameSetupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02598E276231F8009FFDDA /* UsernameSetupPresenter.swift */; };
+		3C025992276235A5009FFDDA /* KeyboardLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C025991276235A5009FFDDA /* KeyboardLayoutGuide.swift */; };
+		3C02599427623776009FFDDA /* UserColorSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02599327623776009FFDDA /* UserColorSetupViewController.swift */; };
+		3C025996276237E7009FFDDA /* AuroraColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C025995276237E7009FFDDA /* AuroraColorPicker.swift */; };
+		3C02599927623836009FFDDA /* SlicedGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02599827623836009FFDDA /* SlicedGradientView.swift */; };
+		3C02599B27623A0C009FFDDA /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02599A27623A0C009FFDDA /* CGPoint+Extensions.swift */; };
+		3C02599D27623AC5009FFDDA /* AuroraSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02599C27623AC5009FFDDA /* AuroraSecondaryTitleLabel.swift */; };
+		3C02599F27623AF4009FFDDA /* UserColorSetupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C02599E27623AF4009FFDDA /* UserColorSetupPresenter.swift */; };
 		3CB1F43B276140F700F28808 /* VCAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1F43A276140F700F28808 /* VCAssembly.swift */; };
 		3CB1F43D2761421D00F28808 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1F43C2761421D00F28808 /* ServiceAssembly.swift */; };
 		3CB1F43F2761425400F28808 /* MosquittoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1F43E2761425400F28808 /* MosquittoManager.swift */; };
@@ -61,6 +80,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C02597427622271009FFDDA /* RouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewController.swift; sourceTree = "<group>"; };
+		3C0259762762227D009FFDDA /* RouterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterPresenter.swift; sourceTree = "<group>"; };
+		3C02597827622287009FFDDA /* RouterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInteractor.swift; sourceTree = "<group>"; };
+		3C02597A276225F6009FFDDA /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		3C02598027622F15009FFDDA /* UsernameSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameSetupViewController.swift; sourceTree = "<group>"; };
+		3C02598227622F51009FFDDA /* AuroraProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraProgressBar.swift; sourceTree = "<group>"; };
+		3C02598427622FBB009FFDDA /* AuroraTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTextfield.swift; sourceTree = "<group>"; };
+		3C0259862762303A009FFDDA /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		3C02598827623063009FFDDA /* AuroraTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTitleLabel.swift; sourceTree = "<group>"; };
+		3C02598A276230D8009FFDDA /* AuroraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraButton.swift; sourceTree = "<group>"; };
+		3C02598C276231A7009FFDDA /* AuroraInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraInfoLabel.swift; sourceTree = "<group>"; };
+		3C02598E276231F8009FFDDA /* UsernameSetupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameSetupPresenter.swift; sourceTree = "<group>"; };
+		3C025991276235A5009FFDDA /* KeyboardLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutGuide.swift; sourceTree = "<group>"; };
+		3C02599327623776009FFDDA /* UserColorSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserColorSetupViewController.swift; sourceTree = "<group>"; };
+		3C025995276237E7009FFDDA /* AuroraColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraColorPicker.swift; sourceTree = "<group>"; };
+		3C02599827623836009FFDDA /* SlicedGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlicedGradientView.swift; sourceTree = "<group>"; };
+		3C02599A27623A0C009FFDDA /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		3C02599C27623AC5009FFDDA /* AuroraSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		3C02599E27623AF4009FFDDA /* UserColorSetupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserColorSetupPresenter.swift; sourceTree = "<group>"; };
 		3CB1F43A276140F700F28808 /* VCAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAssembly.swift; sourceTree = "<group>"; };
 		3CB1F43C2761421D00F28808 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		3CB1F43E2761425400F28808 /* MosquittoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosquittoManager.swift; sourceTree = "<group>"; };
@@ -132,10 +170,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C025972276221DE009FFDDA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3C02597427622271009FFDDA /* RouterViewController.swift */,
+				3C0259762762227D009FFDDA /* RouterPresenter.swift */,
+				3C02597827622287009FFDDA /* RouterInteractor.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3C02597C27622EC8009FFDDA /* OOBE */ = {
+			isa = PBXGroup;
+			children = (
+				3C0259902762350A009FFDDA /* UserColorSetup */,
+				3C02597D27622ED5009FFDDA /* UsernameSetup */,
+				3C02597E27622EE2009FFDDA /* ColorSetup */,
+			);
+			path = OOBE;
+			sourceTree = "<group>";
+		};
+		3C02597D27622ED5009FFDDA /* UsernameSetup */ = {
+			isa = PBXGroup;
+			children = (
+				3C02598027622F15009FFDDA /* UsernameSetupViewController.swift */,
+				3C02598E276231F8009FFDDA /* UsernameSetupPresenter.swift */,
+			);
+			path = UsernameSetup;
+			sourceTree = "<group>";
+		};
+		3C02597E27622EE2009FFDDA /* ColorSetup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ColorSetup;
+			sourceTree = "<group>";
+		};
+		3C02597F27622EFB009FFDDA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3C02597C27622EC8009FFDDA /* OOBE */,
+				3CF5C67B27613D77007ED39E /* Chat */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3C0259902762350A009FFDDA /* UserColorSetup */ = {
+			isa = PBXGroup;
+			children = (
+				3C02599327623776009FFDDA /* UserColorSetupViewController.swift */,
+				3C02599E27623AF4009FFDDA /* UserColorSetupPresenter.swift */,
+			);
+			path = UserColorSetup;
+			sourceTree = "<group>";
+		};
+		3C02599727623814009FFDDA /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3C025995276237E7009FFDDA /* AuroraColorPicker.swift */,
+				3C02599827623836009FFDDA /* SlicedGradientView.swift */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
 		3CB1F438276140CC00F28808 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				3CB1F44F276143F800F28808 /* Components */,
 				3CB1F439276140E200F28808 /* DependencyInjection */,
 				3CB1F47327615DCE00F28808 /* Constants.swift */,
 				3CB1F47C27618DD500F28808 /* Log.swift */,
@@ -182,9 +282,18 @@
 		3CB1F44F276143F800F28808 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3C02599727623814009FFDDA /* ColorPicker */,
 				3CB1F4502761440900F28808 /* OverlayView.swift */,
+				3C02598227622F51009FFDDA /* AuroraProgressBar.swift */,
+				3C02598427622FBB009FFDDA /* AuroraTextfield.swift */,
+				3C02598827623063009FFDDA /* AuroraTitleLabel.swift */,
+				3C02598A276230D8009FFDDA /* AuroraButton.swift */,
+				3C02598C276231A7009FFDDA /* AuroraInfoLabel.swift */,
+				3C025991276235A5009FFDDA /* KeyboardLayoutGuide.swift */,
+				3C02599C27623AC5009FFDDA /* AuroraSecondaryTitleLabel.swift */,
 			);
-			path = Components;
+			name = Components;
+			path = Models/Components;
 			sourceTree = "<group>";
 		};
 		3CB1F4562761453D00F28808 /* ChatCells */ = {
@@ -251,6 +360,7 @@
 				3CB1F43E2761425400F28808 /* MosquittoManager.swift */,
 				3CB1F46227614AB700F28808 /* ChatManager.swift */,
 				3CB1F46427614AD400F28808 /* RealmManager.swift */,
+				3C02597A276225F6009FFDDA /* AppSettings.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -276,11 +386,13 @@
 		8E3246D624215C6500E01467 /* Aurora */ = {
 			isa = PBXGroup;
 			children = (
+				3C02597F27622EFB009FFDDA /* Features */,
+				3CB1F44F276143F800F28808 /* Components */,
+				3C025972276221DE009FFDDA /* Router */,
 				3CB1F46627614B5400F28808 /* RealmObjects */,
 				3CB1F45D2761474900F28808 /* Models */,
 				3CB1F438276140CC00F28808 /* Support */,
 				3CF5C67C27613D84007ED39E /* Managers */,
-				3CF5C67B27613D77007ED39E /* Chat */,
 				3CF5C67A27613D6A007ED39E /* Tetris */,
 				8E32470F2421653600E01467 /* LottieAnimation */,
 				8E3247002421606F00E01467 /* Components */,
@@ -321,6 +433,8 @@
 				3CB1F475276182A800F28808 /* Realm+Extensions.swift */,
 				3CB1F48A2761A00400F28808 /* UITableView+Extension.swift */,
 				3CB1F48C2761A2C600F28808 /* UIDevice+Extension.swift */,
+				3C0259862762303A009FFDDA /* UITextField+Extension.swift */,
+				3C02599A27623A0C009FFDDA /* CGPoint+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -485,22 +599,34 @@
 				8E3246F124215DAC00E01467 /* UIView+Extension.swift in Sources */,
 				3CB1F45C2761467800F28808 /* TextCellPartners.swift in Sources */,
 				3CB1F45F2761475E00F28808 /* ChatMessage.swift in Sources */,
+				3C025992276235A5009FFDDA /* KeyboardLayoutGuide.swift in Sources */,
 				3CB1F45A2761466F00F28808 /* TextCell.swift in Sources */,
 				8E3246D824215C6500E01467 /* AppDelegate.swift in Sources */,
 				3CB1F43D2761421D00F28808 /* ServiceAssembly.swift in Sources */,
+				3C02598327622F51009FFDDA /* AuroraProgressBar.swift in Sources */,
+				3C02598927623063009FFDDA /* AuroraTitleLabel.swift in Sources */,
+				3C02598127622F15009FFDDA /* UsernameSetupViewController.swift in Sources */,
+				3C02599B27623A0C009FFDDA /* CGPoint+Extensions.swift in Sources */,
 				3CB1F47D27618DD500F28808 /* Log.swift in Sources */,
 				3CB1F43B276140F700F28808 /* VCAssembly.swift in Sources */,
+				3C02597B276225F6009FFDDA /* AppSettings.swift in Sources */,
 				8E3246F324215DAC00E01467 /* UIViewController.swift in Sources */,
 				3CB1F48B2761A00400F28808 /* UITableView+Extension.swift in Sources */,
 				8E3246F924215DD000E01467 /* TetrisPresenter.swift in Sources */,
+				3C02597927622287009FFDDA /* RouterInteractor.swift in Sources */,
 				3CB1F48D2761A2C600F28808 /* UIDevice+Extension.swift in Sources */,
 				8E3246F424215DAC00E01467 /* UIFont+Extension.swift in Sources */,
 				3CB1F4512761440900F28808 /* OverlayView.swift in Sources */,
 				8E3246FF2421603000E01467 /* Date+Extension.swift in Sources */,
+				3C02599927623836009FFDDA /* SlicedGradientView.swift in Sources */,
 				3CB1F447276142D100F28808 /* ChatInteractor.swift in Sources */,
 				8E3246F524215DAC00E01467 /* CGSize+Extension.swift in Sources */,
 				3CB1F443276142BD00F28808 /* ChatViewController.swift in Sources */,
+				3C02599427623776009FFDDA /* UserColorSetupViewController.swift in Sources */,
+				3C0259872762303A009FFDDA /* UITextField+Extension.swift in Sources */,
 				3CB1F46827614B6E00F28808 /* ChatMessageRealm.swift in Sources */,
+				3C02599F27623AF4009FFDDA /* UserColorSetupPresenter.swift in Sources */,
+				3C02599D27623AC5009FFDDA /* AuroraSecondaryTitleLabel.swift in Sources */,
 				8E3247082421624D00E01467 /* PaddingLabel.swift in Sources */,
 				3CB1F47427615DCE00F28808 /* Constants.swift in Sources */,
 				3CB1F47A2761850F00F28808 /* ChatStorageProtocol.swift in Sources */,
@@ -509,22 +635,29 @@
 				3CB1F46127614A0D00F28808 /* Double+Extension.swift in Sources */,
 				3CB1F4532761443700F28808 /* UILabel+Extension.swift in Sources */,
 				3CB1F4412761427B00F28808 /* DependencyManager.swift in Sources */,
+				3C02597527622271009FFDDA /* RouterViewController.swift in Sources */,
 				3CB1F46527614AD400F28808 /* RealmManager.swift in Sources */,
+				3C02598B276230D8009FFDDA /* AuroraButton.swift in Sources */,
+				3C02598D276231A7009FFDDA /* AuroraInfoLabel.swift in Sources */,
 				3CB1F4782761850300F28808 /* RealmChatStorage.swift in Sources */,
 				8E3246FD2421600900E01467 /* Comparable+Extension.swift in Sources */,
 				3CB1F46327614AB700F28808 /* ChatManager.swift in Sources */,
+				3C02598F276231F8009FFDDA /* UsernameSetupPresenter.swift in Sources */,
 				3CB1F476276182A800F28808 /* Realm+Extensions.swift in Sources */,
 				8E3246F824215DD000E01467 /* TetrisViewController.swift in Sources */,
 				3CB1F43F2761425400F28808 /* MosquittoManager.swift in Sources */,
 				8E32470A242162F300E01467 /* isHighlightable.swift in Sources */,
+				3C025996276237E7009FFDDA /* AuroraColorPicker.swift in Sources */,
 				3CB1F445276142CA00F28808 /* ChatPresenter.swift in Sources */,
 				3CB1F455276144F500F28808 /* ChatViewController+Delegates.swift in Sources */,
+				3C0259772762227D009FFDDA /* RouterPresenter.swift in Sources */,
 				8E32470C242163EC00E01467 /* VibrationType.swift in Sources */,
 				3CB1F46C2761561F00F28808 /* String+Extension.swift in Sources */,
 				3CB1F46E2761570900F28808 /* ChatMessageCell.swift in Sources */,
 				8E3246F224215DAC00E01467 /* UIColor+Extension.swift in Sources */,
 				3CB1F47F2761954500F28808 /* MQTTChatModel.swift in Sources */,
 				8E32470E242164B900E01467 /* UINavigationController+Extension.swift in Sources */,
+				3C02598527622FBB009FFDDA /* AuroraTextfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

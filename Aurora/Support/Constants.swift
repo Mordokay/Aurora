@@ -14,9 +14,14 @@ struct Constants {
     static let lastMessage = "kLastMessage"
   }
 
-  static let sampleString = "sampleString"
-  static let sampleTimeInterval: TimeInterval = 1.0
-  static let sampleDouble: Double = 1.0
+  struct AppSettings {
+    static let kOobeUsername = "kOobeUserName"
+    static let kOobeUserColor = "kOobeUserColor"
+    static let kOOBEStep = "kOOBEStep"
+  }
+
+  static let animationDuration = 0.3
+  static let maxNameLength: Int = 25
 
   #if DEBUG
   static let isRelease: Bool = false

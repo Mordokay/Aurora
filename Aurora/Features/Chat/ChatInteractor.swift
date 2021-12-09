@@ -71,6 +71,6 @@ class ChatInteractor: ChatInteractorProtocol {
   }
 
   func sendTextMessage(with message: String) {
-    chatManager.sendTextMessage(deviceId: UIDevice().deviceId, username: "Banana", timestamp: Date().millisecondsSince1970, content: message, type: .textUser)
+    chatManager.sendTextMessage(deviceId: UIDevice().deviceId, username: AppSettings.getUserName() ?? "??????", timestamp: Date().millisecondsSince1970, content: message, type: .textUser)
   }
 }

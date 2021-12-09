@@ -30,7 +30,6 @@ class ChatViewController: UIViewController {
   lazy var inputBottomBar: KeyboardToolbarView = {
     let textField = KeyboardToolbarView()
     textField.translatesAutoresizingMaskIntoConstraints = false
-    textField.alpha = 0.3
     textField.textField.textColor = .auroraText
     return textField
   }()

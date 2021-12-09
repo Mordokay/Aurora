@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "clean_search_bar_icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

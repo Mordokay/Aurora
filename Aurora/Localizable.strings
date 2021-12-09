@@ -12,9 +12,25 @@
 "Generic.copy" = "Copy";
 "Generic.cancel" = "Cancel";
 "Generic.call" = "Call";
+"Generic.next" = "Next";
+"Generic.finish" = "Finish";
 
 /** ACTIONS **/
+
 "Action.call" = "Carrier charges may apply. Calls are placed through your mobile service.";
+
+/** OOBE SETUP **/
+"OOBESetup.title" = "Create profile";
+
+/** USERNAME SETUP **/
+"UsernameSetup.title" = "What is your name?";
+"UsernameSetup.info" = "Up to 25 letters, but no spaces or special characters.";
+"UsernameSetup.placeholder" = "Choose wisely";
+
+/** USER COLOR SETUP **/
+"UserColorSetup.title" = "What's your color?";
+"UserColorSetup.subtitle" = "This is the color that will show up in the chat";
+"UserColorSetup.info" = "Other users will have random assigned colors";
 
 /** CHAT */
 "Chat.textbox.placeholder" = "Message";

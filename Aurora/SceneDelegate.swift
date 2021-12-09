@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     if let windowScene = scene as? UIWindowScene {
       let window = UIWindow(windowScene: windowScene)
 //      let tetrisViewController = TetrisViewController()
-      let vc = DependencyManager.resolve(ChatViewController.self)
+      let vc = DependencyManager.resolve(RouterViewController.self)
 
       let navigationController = UINavigationController(rootViewController: vc)
       navigationController.setNavigationBarHidden(true, animated: false)
