@@ -31,6 +31,8 @@ extension UIFont {
   public static var aurora14Dynamic: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(14)) }
   public static var aurora16Dynamic: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(16)) }
 
+  public static var aurora14Bold: UIFont { return auroraFont(ofSize: 14, isBold: true) }
+
   public static var aurora14DynamicBold: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(14), isBold: true) }
   public static var aurora15DynamicBold: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(15), isBold: true) }
   public static var aurora20DynamicBold: UIFont { return auroraFont(ofSize: CGSize.relativeWidth(20), isBold: true) }

@@ -15,8 +15,19 @@ protocol TextCellProtocol: ChatMessageCell {
 
 class TextCell: ChatMessageCell, TextCellProtocol  {
 
+  var nameLabel: UILabel = {
+    let label = UILabel()
+    label.backgroundColor = .clear
+    label.font = .aurora14Bold
+    label.numberOfLines = 1
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.sizeToFit()
+    label.textAlignment = .left
+    return label
+  }()
+
   var baloonText: PaddingLabel = {
-    let label = PaddingLabel(top: 10, bottom: 10, left: 16, right: 16)
+    let label = PaddingLabel(top: 20, bottom: 10, left: 16, right: 16)
     label.backgroundColor = .clear
     label.textAlignment = .left
     label.numberOfLines = 0
@@ -68,11 +79,14 @@ class TextCell: ChatMessageCell, TextCellProtocol  {
     let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
     let matches = detector.matches(in: text.string, options: [], range: NSRange(location: 0, length: text.string.utf16.count))
 
-    text.append(NSAttributedString(string: UIDevice.isPhone8Size() ? " ______" : " _______", attributes: [NSAttributedString.Key.foregroundColor: UIColor.clear]))
+    text.append(NSAttributedString(string: UIDevice.isPhone8Size() ? " ____________" : " ______________", attributes: [NSAttributedString.Key.foregroundColor: UIColor.clear]))
 
+    let isSent = message.deviceId == UIDevice().deviceId
+    nameLabel.textColor = isSent ? AppSettings.getUserColor() : AppSettings.getColor(for: message.deviceId)
+    nameLabel.text = message.username
     baloonText.setText(text)
     baloonText.delegate = delegate
-    timeInfoLabel.text = DateFormatter.localizedString(from: Date(timeIntervalSince1970: self.message.timestamp.toSecondsFromMilliseconds), dateStyle: .none, timeStyle: .short)
+    timeInfoLabel.text = Date(timeIntervalSince1970: self.message.timestamp.toSecondsFromMilliseconds).simpleDate("d MMM, h:mm a")
 
   }
 
@@ -80,10 +94,16 @@ class TextCell: ChatMessageCell, TextCellProtocol  {
     self.backgroundColor = .clear
     self.isUserInteractionEnabled = true
     self.selectionStyle = .none
+
+    baloonText.addSubview(nameLabel)
     self.contentView.addSubview(baloonText)
     self.contentView.addSubview(timeInfoLabel)
 
     NSLayoutConstraint.activate([
+      nameLabel.topAnchor.constraint(equalTo: self.baloonText.topAnchor, constant: 3),
+      nameLabel.leadingAnchor.constraint(equalTo: baloonText.leadingAnchor, constant: 6),
+      nameLabel.trailingAnchor.constraint(equalTo: self.baloonText.trailingAnchor),
+
       baloonText.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -5),
       baloonText.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -relativeWidth(24)),
       baloonText.widthAnchor.constraint(lessThanOrEqualToConstant: CGSize.currentWindowSize.width - relativeWidth(104)),

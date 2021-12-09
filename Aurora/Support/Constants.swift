@@ -12,6 +12,7 @@ struct Constants {
 
   struct Chat {
     static let lastMessage = "kLastMessage"
+    static let kDeviceColor = "kDeviceColor_"
   }
 
   struct AppSettings {

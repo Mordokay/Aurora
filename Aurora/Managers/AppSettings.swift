@@ -26,6 +26,21 @@ struct AppSettings {
     }
   }
 
+  static func setColor(for deviceId: String, color: UIColor) {
+    UserDefaults.standard.set(color.hexString, forKey: "\(Constants.Chat.kDeviceColor)\(deviceId)")
+  }
+
+
+  static func getColor(for deviceId: String) -> UIColor? {
+    if let hexColor = UserDefaults.standard.string(forKey: "\(Constants.Chat.kDeviceColor)\(deviceId)") {
+      return UIColor(hexString: hexColor)
+    } else {
+      let randomColor = UIColor.random
+      setColor(for: deviceId, color: randomColor)
+      return randomColor
+    }
+  }
+
   static func setUserColor(with color: UIColor) {
     UserDefaults.standard.set(color.hexString, forKey: Constants.AppSettings.kOobeUserColor)
   }

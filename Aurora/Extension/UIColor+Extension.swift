@@ -82,6 +82,13 @@ extension UIColor {
   var blueValue: CGFloat { return CIColor(color: self).blue }
   var alphaValue: CGFloat { return CIColor(color: self).alpha }
 
+  static var random: UIColor {
+    return UIColor(red: .random(in: 0...1),
+                   green: .random(in: 0...1),
+                   blue: .random(in: 0...1),
+                   alpha: 1.0)
+  }
+  
   convenience public init(hex: Int32) {
     //let alpha = CGFloat((hex & 0x000000) >> 24) / 255.0
     let red = CGFloat((hex & 0xFF0000) >> 16) / 255.0
