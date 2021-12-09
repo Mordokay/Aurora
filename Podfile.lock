@@ -1,20 +1,74 @@
 PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaLumberjack/Core (3.7.2)
+  - CocoaLumberjack/Swift (3.7.2):
+    - CocoaLumberjack/Core
+  - CocoaMQTT (1.3.0-rc.1):
+    - CocoaMQTT/Core (= 1.3.0-rc.1)
+  - CocoaMQTT/Core (1.3.0-rc.1):
+    - CocoaAsyncSocket (~> 7.6.3)
+  - CocoaMQTT/WebSockets (1.3.0-rc.1):
+    - CocoaMQTT/Core
+    - Starscream (~> 3.0.2)
   - lottie-ios (3.1.6)
+  - Realm (10.17.0):
+    - Realm/Headers (= 10.17.0)
+  - Realm/Headers (10.17.0)
+  - RealmSwift (10.17.0):
+    - Realm (= 10.17.0)
+  - RSKGrowingTextView (6.1.0):
+    - RSKPlaceholderTextView (= 6.1.0)
+  - RSKPlaceholderTextView (6.1.0)
+  - RxSwift (6.2.0)
+  - Starscream (3.0.6)
+  - Swinject (2.7.1)
+  - SwinjectAutoregistration (2.8.1):
+    - Swinject (= 2.7.1)
   - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - CocoaMQTT (= 1.3.0-rc.1)
+  - CocoaMQTT/WebSockets (= 1.3.0-rc.1)
   - lottie-ios (~> 3.1.5)
+  - RealmSwift
+  - RSKGrowingTextView
+  - RxSwift
+  - Swinject
+  - SwinjectAutoregistration
   - TTTAttributedLabel (~> 2.0.0)
 
 SPEC REPOS:
   trunk:
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+    - CocoaMQTT
     - lottie-ios
+    - Realm
+    - RealmSwift
+    - RSKGrowingTextView
+    - RSKPlaceholderTextView
+    - RxSwift
+    - Starscream
+    - Swinject
+    - SwinjectAutoregistration
     - TTTAttributedLabel
 
 SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  CocoaMQTT: 3a24a180c2d7759465abbd96d49c655e4399ac35
   lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  Realm: 9533276bd76f66aa2fd0d3ffe700c1f6023dcab6
+  RealmSwift: 57f5d59aa29852587aad1e861989e7af139894b5
+  RSKGrowingTextView: 79c33ae948d27f8b56d8fe331f2873fba9a8f149
+  RSKPlaceholderTextView: 52f26e643b6f9bbf16f45cd2bbe2181b6dfe090c
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectAutoregistration: e83e362da3ca9c64a68290e89efbc40e378dff12
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 3088e57949552bc98a3ec4a6d5a8888a43163b4d
+PODFILE CHECKSUM: 6b8ec45defb67c37c5a0bb2a1384e4d76e2cecbe
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.2

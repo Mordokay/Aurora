@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Aurora
+
+  Created by Pedro Saldanha on 08/12/2021.
+  Copyright © 2021 GreenSphereStudios. All rights reserved.
+*/
+
+
+/** GENERIC */
+"Generic.send" = "Send";
+"Generic.copy" = "Copy";
+"Generic.cancel" = "Cancel";
+"Generic.call" = "Call";
+
+/** ACTIONS **/
+"Action.call" = "Carrier charges may apply. Calls are placed through your mobile service.";
+
+/** CHAT */
+"Chat.textbox.placeholder" = "Message";
